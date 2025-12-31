@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NowPlaying from "@/components/now-playing";
 
 const skills = [
   "javascript", "react", "node.js", "python", "css", "html", "postgresql", "redis", "docker",
@@ -23,11 +24,12 @@ const education = [
 
 export default function Home() {
   return (
-    <div className="min-h-[80vh] flex flex-col justify-center">
-      <div className="max-w-2xl mx-auto px-6 py-20">
+    <>
+      <div className="min-h-[80vh] flex flex-col justify-center">
+        <div className="max-w-2xl mx-auto px-6 py-20">
         {/* Greeting */}
         <p className="text-[var(--muted-foreground)] mb-4">
-          hi, i&apos;m alex
+          hi, i&apos;m alex.
         </p>
 
         {/* Main title */}
@@ -37,19 +39,28 @@ export default function Home() {
 
         {/* Tagline */}
         <p className="text-[var(--muted-foreground)] text-lg mb-12">
-          building cool software for users and businesses.
+          located in boston, massachusetts.
         </p>
 
         {/* Bio */}
         <section className="mb-12">
           <p className="text-[var(--muted-foreground)] leading-relaxed mb-4">
-            i build software that is beautiful, fast, and accessible.
-            i focus on creating intuitive user experiences and writing clean, maintainable code.
+            i enjoy building beautiful, clean, and accessible software. i focus on creating 
+            intuitive user experiences and writing clean, maintainable code.      
+          </p>
+          <p className="text-[var(--muted-foreground)] leading-relaxed mb-4">
+            i also love solving problems and building projects on the side. (reach out if you'd like to build with me!)
           </p>
           <p className="text-[var(--muted-foreground)] leading-relaxed">
             when i&apos;m not coding, you&apos;ll find me exploring cafes, running,
-            reading, playing basketball, or contributing to open source.
+            listening to music, playing sports, or contributing to open source.
           </p>
+        </section>
+
+        {/* Now Playing */}
+        <section className="mb-12">
+          <p className="text-xs text-[var(--muted-foreground)] mb-3">currently listening:</p>
+          <NowPlaying />
         </section>
 
         {/* Skills */}
@@ -176,7 +187,8 @@ export default function Home() {
 
         {/* Divider */}
         <hr className="my-12" />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

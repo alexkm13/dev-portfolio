@@ -31,7 +31,7 @@ export const projects: Project[] = [
     slug: "topo-trader",
     title: "Alex's Quant Trader",
     description: "A quant trading bot that uses graph diffusion and topological data analysis (TDA) for alpha generation to make trading decisions.",
-    tags: ["Python", "NumPy", "SciPy", "SQLAlchemy", "scikit-learn"],
+    tags: ["Python", "NumPy", "SciPy", "PostgreSQL", "scikit-learn"],
     link: "https://example.com",
     github: "https://github.com/alexkm13/topo-trader",
     featured: true,

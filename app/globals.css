@@ -224,3 +224,30 @@ pre code {
     text-wrap: balance;
   }
 }
+
+@keyframes sound-wave-1 {
+  0%, 100% { height: 4px; }
+  50% { height: 12px; }
+}
+
+@keyframes sound-wave-2 {
+  0%, 100% { height: 8px; }
+  50% { height: 4px; }
+}
+
+@keyframes sound-wave-3 {
+  0%, 100% { height: 12px; }
+  50% { height: 6px; }
+}
+
+.animate-sound-wave-1 {
+  animation: sound-wave-1 0.8s ease-in-out infinite;
+}
+
+.animate-sound-wave-2 {
+  animation: sound-wave-2 0.8s ease-in-out infinite;
+}
+
+.animate-sound-wave-3 {
+  animation: sound-wave-3 0.8s ease-in-out infinite;
+}
